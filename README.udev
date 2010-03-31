@@ -1,0 +1,9 @@
+To install udev rules, run `make unix-install'. It works on Debian
+(squeeze).
+
+It seems that permissions are not set properly if the devices are
+already plugged in before boot (maybe because they are here before
+udev is started?). To solve this, you can put the following line in
+your /etc/rc.local:
+
+lsusb | awk -F'[ :]+' '/ID 04d8:/{print "/dev/bus/usb/"$2"/"$4}' | xargs chmod 666
