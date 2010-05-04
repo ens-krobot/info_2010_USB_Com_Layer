@@ -14,6 +14,7 @@
 #define USB_PID_MOTOR_CONTROLLER     0x0003        ///< Product ID de la Carte d'asservissement
 #define USB_PID_ROBOT_INTERFACE      0x0004        ///< Product ID de la Carte d'actionneur
 #define USB_PID_BATTERY_MONITORING   0x0005        ///< Product ID de la carte Battery Monitoring
+#define USB_PID_SENSOR_INTERFACE     0x0006        ///< Product ID de la carte Sensor Interface
 #define USB_PID_BOOTLOADER           0x000b        ///< Product ID d'une carte en mode bootloader
 
 // Protocole USB
