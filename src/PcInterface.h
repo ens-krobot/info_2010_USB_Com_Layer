@@ -102,8 +102,9 @@ typedef struct _UP {
 #define SET_PORTS_CONFIG_OUTPUTS       0x01        ///< Définir les sorties du PIC
 #define SET_PORTS_STATE_LOW            0x02        ///< Définir les sorties à l'état bas du PIC
 #define SET_PORTS_STATE_HIGH           0x03        ///< Définir les sorties à l'état haut du PIC
-#define SET_SERVO_CONFIG               0x04        ///< Définir la config des servomoteurs
-#define SET_SERVO_STATE                0x05        ///< Définir l'état des servomoteurs
+#define SET_SERVO_CONFIG               0x04        ///< Définir la config des servomoteurs [Robot Interface]
+#define SET_SERVO_STATE                0x05        ///< Définir l'état des servomoteurs [Robot Interface]
+#define SET_BUZZER_STATE               0x06        ///< Activer le buzzer [Battery Monitoring]
 
 // CMD_CALIBRATE arguments
 #define CAL_START                      0x00
