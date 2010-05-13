@@ -63,6 +63,7 @@ typedef struct _UP {
 #define CMD_MOTOR                        11        ///< Gestion des moteurs
 #define CMD_MOTOR_TOR                    12
 #define CMD_LCD                          13        ///< Commande de l'afficheur LCD
+#define CMD_USRF                         14        ///< Télémètres US I2C
 
 // CMD_GET arguments
 #define GET_RESET_SOURCE                  0        ///< Demande au PIC la source du Reset
@@ -154,6 +155,10 @@ typedef struct _UP {
 #define LCD_GOTO_POS                   0x05
 #define LCD_WRITE                      0x06
 #define LCD_WRITE_LINE                 0x07
+
+// CMD_USRF
+#define USRF_MEASURE                   0x00
+#define USRF_GET                       0x01
 
 // CMD_TRAJ
 #define TRAJ_INIT                      0x00
