@@ -81,8 +81,10 @@ typedef struct _UP {
 #define GET_CURRENT                      12        ///< Valeur instantanée du courant débité par la batterie [Battery Monitoring]
 #define GET_POWER_STATE                  13        ///< Etat de l'alimentation de puissance (On/Off) [Battery Monitoring]
 #define GET_BATTERY_STATE                14        ///< Etat des batteries (Pleine charge/Charge moyenne/Charge faible) [Battery Monitoring]
-#define GET_CURRENT_SPEED                15        ///< Demande au PIC la valeur actuelle d'un moteur [Carte d'asservissement]
+#define GET_CURRENT_SPEED                15        ///< Demande au PIC la valeur actuelle de la vitesse d'un moteur [Carte d'asservissement]
 #define GET_INTEGRATION_SUM              16        ///< Demande au PIC la valeur actuelle du terme integration de l'asservissement [Carte d'asservissement]
+#define GET_DESIRED_SPEED                17        ///< Demande au PIC la valeur désirée de la vitesse d'un moteur [Carte d'asservissement]
+#define GET_DESIRED_POS                  18        ///< Demande au PIC les positions désirées des moteurs [Carte d'asservissement]
 
 // CMD_ERR arguments
 #define ERR_UNKNOWN_CMD                   1        ///< Commande inconnue
